@@ -54,14 +54,25 @@ Ich erstelle mit Java ein Bank Management System
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           |              |               |
-| ...  |       |           |              |               |
+|1.A			|22.11.2024|Damian Eisenring|Implementierung der Kontoerstellungsfunktion|	75
+|1.B			|22.11.2024|Damian Eisenring|Validierung der Eingabedaten bei der Kontoerstellung|	75
+|2.A			|22.11.2024|Damian Eisenring|Implementierung der Einzahlungsfunktion	| 75
+|2.B			|22.11.2024|Damian Eisenring|Implementierung der Abhebungsfunktion|	75
+|2.C			|22.11.2024|Damian Eisenring|Test und Validierung von Einzahlungs- und Abhebungsfunktionen	|75
+|3.A			|29.11.2024|Damian Eisenring|Implementierung der Login-Funktion|	75
+|3.B			|29.11.2024|Damian Eisenring|Implementierung der Session-Verwaltung nach dem Login|	75
+|4.A			|6.11.2024|Damian Eisenring|Implementierung der Anzeige des Transaktionsverlaufs|	75
+|4.B		|6.12.2024|Damian Eisenring|Gestaltung der Benutzeroberfläche für den Transaktionsverlauf	|75
+|5.A		|13.12.2024|Damian Eisenring|Implementierung der Fehlerbehandlung bei unzureichendem Guthaben|	75
+|5.B		|6.12.2024|Damian Eisenring|Fehlerbehandlung bei ungültigen Beträgen und Eingaben	|75
+|6.A			|13.12.2024|Damian Eisenring|Funktion zur Aktualisierung von Kontoinformationen hinzufügen	|75
+|6.B		|13.12.2024|Damian Eisenring|	Funktion zur Konto-Löschung implementieren|75
+|6.C|13.12.2024|Damian Eisenring|			Test und Validierung der Datenbearbeitungsfunktionen|75
+|7.A|13.12.2024	|	Damian Eisenring	|Implementierung der Zugriffsbeschränkungen	|75
 
-Total: 
+Total: 18.75h
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
 
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
 
 ## 3 Entscheiden
 
