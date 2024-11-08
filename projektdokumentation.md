@@ -19,7 +19,13 @@ Ich erstelle mit Java ein Bank Management System
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
+|1	|Muss|	Funktional|	Als ein Benutzer möchte ich ein neues Konto erstellen können, damit ich den Service nutzen kann.|
+|2	|Muss	|Funktional	|Als ein Benutzer möchte ich Geld auf mein Konto einzahlen und abheben können, damit ich mein Konto aktiv nutzen kann.|
+|3	|Muss	|Funktional	|Als ein Benutzer möchte ich mich in mein Konto einloggen können, damit ich sicher auf mein Konto zugreifen kann.|
+|4|	Muss	|Funktional	|Als ein Benutzer möchte ich meinen Transaktionsverlauf einsehen können, damit ich meine Kontobewegungen nachvollziehen kann.|
+|5|	Muss	|Qualität	|Als ein Benutzer möchte ich eine Fehlermeldung erhalten, wenn mein Kontostand nicht ausreicht oder ungültige Beträge eingegeben werden.|
+|6	|Kann	|Funktional|	Als ein Benutzer möchte ich mein Konto löschen oder Kontoinformationen aktualisieren können, damit ich meine Konten flexibel verwalten kann.|
+|7|	Muss	|Qualität	|Als ein Benutzer möchte ich sicherstellen, dass nur autorisierte Benutzer ihre eigenen Konten verwalten können, damit meine Daten sicher sind.|
 | ...  |                 |      |                                    |
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
