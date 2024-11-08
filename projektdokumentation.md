@@ -34,14 +34,21 @@ Ich erstelle mit Java ein Bank Management System
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
+|1.1	|Benutzer ist auf der Kontoerstellungsseite|	Formular mit gültigen Daten ausfüllen|	Neues Benutzerkonto wird erfolgreich erstellt und bestätigt.|
+|1.2	|Benutzer ist auf der Kontoerstellungsseite|	Formular mit ungültigen Daten (z. B. fehlende Pflichtfelder)	|Fehlermeldung wird angezeigt, dass Pflichtfelder ausgefüllt werden müssen.|
+|2.1	|Benutzer ist im Konto eingeloggt und auf der Transaktionsseite|	Gültigen Betrag zur Einzahlung eingeben	|Betrag wird dem Kontostand hinzugefügt und bestätigt.|
+|2.2	|Benutzer ist im Konto eingeloggt und auf der Transaktionsseite|	Betrag zur Abhebung eingeben, der den Kontostand nicht übersteigt	|Betrag wird vom Kontostand abgezogen und bestätigt.|
+|2.3	|Benutzer ist im Konto eingeloggt und auf der Transaktionsseite|	Betrag zur Abhebung eingeben, der den Kontostand übersteigt|	Fehlermeldung wird angezeigt, dass das Guthaben nicht ausreicht.|
+|3.1	|Benutzer ist auf der Login-Seite	|Gültige Anmeldedaten eingeben|	Benutzer wird erfolgreich eingeloggt und auf das Konto weitergeleitet.|
+|3.2	|Benutzer ist auf der Login-Seite|	Ungültige Anmeldedaten eingeben	|Fehlermeldung wird angezeigt, dass die Zugangsdaten ungültig sind.|
+|4.1	|Benutzer ist im Konto eingeloggt|	Transaktionsverlauf aufrufen	|Vollständiger Transaktionsverlauf des Kontos wird angezeigt.|
+|5.1	|Benutzer ist auf der Transaktionsseite und gibt einen ungültigen Betrag ein|	Ungültiger Betrag (z. B. Text statt Zahl)	Fehlermeldung wird angezeigt, dass der Betrag ungültig ist.|
+|6.1	|Benutzer ist im Konto eingeloggt|	Kontoinformationen aufrufen und bearbeiten|	Aktualisierte Kontoinformationen werden gespeichert und bestätigt.|
+|6.2	|Benutzer ist im Konto eingeloggt	|Option zur Konto-Löschung auswählen|	Konto wird gelöscht und Bestätigung wird angezeigt.|
+|7.1|	Benutzer A ist eingeloggt und versucht, auf Konto von Benutzer B zuzugreifen|	Versuch, Konto-ID von Benutzer B manuell einzugeben|	Zugriff verweigert; Fehlermeldung wird angezeigt, dass der Zugriff nicht autorisiert ist.|
 | ...  |              |         |                   |
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
-### 1.4 Diagramme
-
-✍️Fügen Sie hier ein Use Case-Diagramm mit mindestens 10 Anwendungsfällen ein; und einen PAP.
 
 ## 2 Planen
 
