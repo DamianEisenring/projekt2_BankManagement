@@ -82,10 +82,13 @@ Total: 18.75h
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
+| 1.A  |    15.11.2024  |  Eisenring Damian    | 75              |       75            |
+| 1.B  |    15.11.2024  |  Eisenring Damian    | 75              |       75            |
+| 2.A  |    22.11.2024  |  Eisenring Damian    | 75              |       75            |
+| 2.B  |    22.11.2024  |  Eisenring Damian    | 75              |       75            |
+| 2.C  |    22.11.2024  |  Eisenring Damian    | 75              |       75            |
 | ...  |       |           |               |                   |
 
-✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
 
 ## 5 Kontrollieren
 
