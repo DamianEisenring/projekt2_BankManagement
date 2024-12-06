@@ -64,7 +64,7 @@ Ich erstelle mit Java ein Bank Management System
 |4.A			|6.11.2024|Damian Eisenring|Implementierung der Anzeige des Transaktionsverlaufs|	75
 |4.B		|6.12.2024|Damian Eisenring|Gestaltung der Benutzeroberfläche für den Transaktionsverlauf	|75
 |5.A		|13.12.2024|Damian Eisenring|Implementierung der Fehlerbehandlung bei unzureichendem Guthaben|	75
-|5.B		|6.12.2024|Damian Eisenring|Fehlerbehandlung bei ungültigen Beträgen und Eingaben	|75
+|5.B		|13.12.2024|Damian Eisenring|Fehlerbehandlung bei ungültigen Beträgen und Eingaben	|75
 |6.A			|13.12.2024|Damian Eisenring|Funktion zur Aktualisierung von Kontoinformationen hinzufügen	|75
 |6.B		|13.12.2024|Damian Eisenring|	Funktion zur Konto-Löschung implementieren|75
 |6.C|13.12.2024|Damian Eisenring|			Test und Validierung der Datenbearbeitungsfunktionen|75
