@@ -67,10 +67,9 @@ Ich erstelle mit Java ein Bank Management System
 |5.B		|13.12.2024|Damian Eisenring|Fehlerbehandlung bei ungültigen Beträgen und Eingaben	|75
 |6.A			|13.12.2024|Damian Eisenring|Funktion zur Aktualisierung von Kontoinformationen hinzufügen	|75
 |6.B		|13.12.2024|Damian Eisenring|	Funktion zur Konto-Löschung implementieren|75
-|6.C|13.12.2024|Damian Eisenring|			Test und Validierung der Datenbearbeitungsfunktionen|75
 |7.A|13.12.2024	|	Damian Eisenring	|Implementierung der Zugriffsbeschränkungen	|75
 
-Total: 18.75h
+Total: 18h
 
 
 
