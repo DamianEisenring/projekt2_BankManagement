@@ -54,6 +54,12 @@ public class DbContext {
 
 
     public static boolean updateBalance(int userId, double amount, String type) {
+        double currentBalance = getBalance(userId);
+        if (type.equals("Abhebung") && currentBalance + amount < 0) {
+            System.out.println("Fehler: Nicht genügend Guthaben für diese Transaktion.");
+            return false;
+        }
+
         String updateBalanceSQL = "UPDATE users SET balance = balance + ? WHERE id = ?";
         String insertTransactionSQL = "INSERT INTO transactions(user_id, amount, type) VALUES (?, ?, ?)";
 
@@ -79,6 +85,7 @@ public class DbContext {
             return false;
         }
     }
+
 
     public static double getBalance(int userId) {
         String sql = "SELECT balance FROM users WHERE id = ?";
@@ -182,6 +189,48 @@ public class DbContext {
             System.out.println("Benutzer erfolgreich hinzugefügt: " + name);
         } catch (SQLException e) {
             System.out.println("Fehler beim Einfügen: " + e.getMessage());
+        }
+    }
+
+    public static boolean updateUserInfo(int userId, String column, String newValue) {
+        String sql = "UPDATE users SET " + column + " = ? WHERE id = ?";
+
+        try (Connection conn = connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, newValue);
+            pstmt.setInt(2, userId);
+            pstmt.executeUpdate();
+            System.out.println("Information erfolgreich aktualisiert.");
+            return true;
+        } catch (SQLException e) {
+            System.out.println("Fehler beim Aktualisieren der Informationen: " + e.getMessage());
+            return false;
+        }
+    }
+
+
+    public static boolean deleteUserAccount(int userId) {
+        String deleteUserSQL = "DELETE FROM users WHERE id = ?";
+        String deleteTransactionsSQL = "DELETE FROM transactions WHERE user_id = ?";
+
+        try (Connection conn = connect();
+             PreparedStatement deleteUserStmt = conn.prepareStatement(deleteUserSQL);
+             PreparedStatement deleteTransactionsStmt = conn.prepareStatement(deleteTransactionsSQL)) {
+
+            conn.setAutoCommit(false);
+
+            deleteTransactionsStmt.setInt(1, userId);
+            deleteTransactionsStmt.executeUpdate();
+
+            deleteUserStmt.setInt(1, userId);
+            deleteUserStmt.executeUpdate();
+
+            conn.commit();
+            System.out.println("Konto erfolgreich gelöscht.");
+            return true;
+        } catch (SQLException e) {
+            System.out.println("Fehler beim Löschen des Kontos: " + e.getMessage());
+            return false;
         }
     }
 }
