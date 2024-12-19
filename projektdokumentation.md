@@ -62,7 +62,6 @@ Ich erstelle mit Java ein Bank Management System
 |3.A			|29.11.2024|Damian Eisenring|Implementierung der Login-Funktion|	75
 |3.B			|29.11.2024|Damian Eisenring|Implementierung der Session-Verwaltung nach dem Login|	75
 |4.A			|6.11.2024|Damian Eisenring|Implementierung der Anzeige des Transaktionsverlaufs|	75
-|4.B		|6.12.2024|Damian Eisenring|Gestaltung der Benutzeroberfläche für den Transaktionsverlauf	|75
 |5.A		|13.12.2024|Damian Eisenring|Implementierung der Fehlerbehandlung bei unzureichendem Guthaben|	75
 |5.B		|13.12.2024|Damian Eisenring|Fehlerbehandlung bei ungültigen Beträgen und Eingaben	|75
 |6.A			|13.12.2024|Damian Eisenring|Funktion zur Aktualisierung von Kontoinformationen hinzufügen	|75
