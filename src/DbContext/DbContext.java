@@ -34,6 +34,7 @@ public class DbContext {
                 + " FOREIGN KEY (user_id) REFERENCES users (id)\n"
                 + ");";
 
+
         try (Connection conn = connect();
              Statement stmt = conn.createStatement()) {
             stmt.execute(userTable);
