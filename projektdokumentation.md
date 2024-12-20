@@ -28,7 +28,6 @@ Ich erstelle mit Java ein Bank Management System
 |7|	Muss	|Qualität	|Als ein Benutzer möchte ich sicherstellen, dass nur autorisierte Benutzer ihre eigenen Konten verwalten können, damit meine Daten sicher sind.|
 | ...  |                 |      |                                    |
 
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
 
 ### 1.3 Testfälle
 
@@ -45,7 +44,6 @@ Ich erstelle mit Java ein Bank Management System
 |5.1	|Benutzer ist auf der Transaktionsseite und gibt einen ungültigen Betrag ein|	Ungültiger Betrag (z. B. Text statt Zahl)	Fehlermeldung wird angezeigt, dass der Betrag ungültig ist.|
 |6.1	|Benutzer ist im Konto eingeloggt|	Kontoinformationen aufrufen und bearbeiten|	Aktualisierte Kontoinformationen werden gespeichert und bestätigt.|
 |6.2	|Benutzer ist im Konto eingeloggt	|Option zur Konto-Löschung auswählen|	Konto wird gelöscht und Bestätigung wird angezeigt.|
-|7.1|	Benutzer A ist eingeloggt und versucht, auf Konto von Benutzer B zuzugreifen|	Versuch, Konto-ID von Benutzer B manuell einzugeben|	Zugriff verweigert; Fehlermeldung wird angezeigt, dass der Zugriff nicht autorisiert ist.|
 | ...  |              |         |                   |
 
 
@@ -74,40 +72,50 @@ Total: 18h
 
 ## 3 Entscheiden
 
-✍️ Dokumentieren Sie hier Ihre Entscheidungen und Annahmen, die Sie im Bezug auf Ihre User Stories und die Implementierung getroffen haben.
+Ich habe mich dazu entschieden diese App in Java zu programmieren, da ich eine Praktikumsstelle während diesem Modul gefunden habe, welche Java als Sprache beinhaltet.
 
 ## 4 Realisieren
 
-| AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
-| ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |    15.11.2024  |  Eisenring Damian    | 75              |       75            |
-| 1.B  |    15.11.2024  |  Eisenring Damian    | 75              |       75            |
-| 2.A  |    22.11.2024  |  Eisenring Damian    | 75              |       75            |
-| 2.B  |    22.11.2024  |  Eisenring Damian    | 75              |       75            |
-| 2.C  |    22.11.2024  |  Eisenring Damian    | 75              |       75            |
-| ...  |       |           |               |                   |
+| AP-№ | Datum      | Zuständig | geplante Zeit | tatsächliche Zeit |
+|------|------------| --------- | ------------- |-------------------|
+| 1.A  | 15.11.2024 |  Eisenring Damian    | 75              | 95                |
+| 1.B  | 15.11.2024 |  Eisenring Damian    | 75              | 95                |
+| 2.A  | 22.11.2024 |  Eisenring Damian    | 75              | 95                |
+| 2.B  | 22.11.2024 |  Eisenring Damian    | 75              | 95                |
+| 2.C  | 22.11.2024 |  Eisenring Damian    | 75              | 95                |
+| 3.A  | 29.11.2024 |  Eisenring Damian    | 75              | 95                |
+| 3.B  | 29.11.2024 |  Eisenring Damian    | 75              | 95                |
+| 4.A  | 06.12.2024 |  Eisenring Damian    | 75              | 95                |
+| 4.B  | 06.12.2024 |  Eisenring Damian    | 75              | 95                |
+| 5.A  | 13.12.2024 |  Eisenring Damian    | 75              | 50                |
+| 5.B  | 13.12.2024 |  Eisenring Damian    | 75              | 50                |
+| 6.A  | 13.12.2024 |  Eisenring Damian    | 75              | 50                |
+| 6.B  | 13.12.2024 |  Eisenring Damian    | 75              | 50                |
+| 7.A  | 15.12.2024 |  Eisenring Damian    | 75              | 50                |
+| ...  |            |           |               |                   |
 
 
 ## 5 Kontrollieren
 
 ### 5.1 Testprotokoll
 
-| TC-№ | Datum | Resultat | Tester |
-| ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+| TC-№ | Datum      | Resultat | Tester           |
+|------|------------|----------|------------------|
+| 1.1  | 20.12.2024 | ok       | Damian Eisenring |
+| 1.2  | 20.12.2024 | ok       | Damian Eisenring |
+| 2.1  | 20.12.2024 | ok       | Damian Eisenring |
+| 2.2  | 20.12.2024 | ok       | Damian Eisenring |
+| 2.3  | 20.12.2024 | ok       | Damian Eisenring |
+| 3.1  | 20.12.2024 | ok       | Damian Eisenring |
+| 3.2  | 20.12.2024 | ok       | Damian Eisenring |
+| 4.1  | 20.12.2024 | ok       | Damian Eisenring |
+| 5.1  | 20.12.2024 | ok       | Damian Eisenring |
+| 6.1  | 20.12.2024 | ok       | Damian Eisenring |
+| 6.2  | 20.12.2024 | ok       | Damian Eisenring |
+| ...  |            |          |                  |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
-### 5.2 Exploratives Testen
-
-| BR-№ | Ausgangslage | Eingabe | Erwartete Ausgabe | Tatsächliche Ausgabe |
-| ---- | ------------ | ------- | ----------------- | -------------------- |
-| I    |              |         |                   |                      |
-| ...  |              |         |                   |                      |
-
-✍️ Verwenden Sie römische Ziffern für Ihre Bug Reports, also I, II, III, IV etc.
-
-## 6 Auswerten
-
-✍️ Fügen Sie hier eine Verknüpfung zu Ihrem Lern-Bericht ein.
+Alle getesteten Kernfunktionen der Anwendung haben die Anforderungen erfüllt. 
+Sowohl positive als auch negative Szenarien wurden erfolgreich geprüft,
+einschliesslich Kontoerstellung, Login, Transaktionen und Kontoverwaltung. 
+Die Tests verliefen fehlerfrei und zeigen eine stabile Implementierung.
